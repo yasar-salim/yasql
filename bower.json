@@ -1,0 +1,23 @@
+{
+  "name": "yasql",
+  "version": "0.0.1",
+  "homepage": "https://github.com/yasar-salim/yqueries",
+  "authors": [
+    "yasar-salim <yasarsalim@bytekat.com>"
+  ],
+  "description": "yasql is mysql library using php language",
+  "main": "yasql.inc.php",
+  "keywords": [
+    "mysql",
+    "php",
+    "library"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
