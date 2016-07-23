@@ -2,7 +2,6 @@
     "name": "yasql/yasql",
     "type": "library",
     "description": "yasql is mysql library using php language",
-    "keywords": [""],
     "homepage": "https://github.com/yasar-salim/yasql",
     "license": "MIT",
     "authors": [
