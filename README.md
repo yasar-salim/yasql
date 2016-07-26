@@ -70,7 +70,7 @@ returns resultset if query successfully executed else display error<br>
 example:<br>
 $response=$object_name->select_min("col1","table_name"," 1 ");
 
-<h5> 8 . select maximum value from a row</h5>
+<h5> 9 . select maximum value from a row</h5>
 <p>Usage: </p>
 $object_name->select_max($column,$table,$condition);<br>
 returns resultset if query successfully executed else display error<br>
