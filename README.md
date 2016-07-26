@@ -53,3 +53,26 @@ returns resultset if query successfully executed else display error<br>
 example:<br>
 $response=$object_name->select_sum("col1","table_name"," col1 > '10' ");<br>
 $response=$object_name->select_rows("col1","table_name"," 1 "); to sum  all rows
+
+
+<h5> 7 . select average of rows</h5>
+<p>Usage: </p>
+$object_name->select_avg($column,$table,$condition);<br>
+returns resultset if query successfully executed else display error<br>
+example:<br>
+$response=$object_name->select_sum("col1","table_name"," col1 > '10' ");<br>
+$response=$object_name->select_rows("col1","table_name"," 1 "); to average  all rows
+
+<h5> 8 . select minimum value from a row</h5>
+<p>Usage: </p>
+$object_name->select_min($column,$table,$condition);<br>
+returns resultset if query successfully executed else display error<br>
+example:<br>
+$response=$object_name->select_min("col1","table_name"," 1 ");
+
+<h5> 8 . select maximum value from a row</h5>
+<p>Usage: </p>
+$object_name->select_max($column,$table,$condition);<br>
+returns resultset if query successfully executed else display error<br>
+example:<br>
+$response=$object_name->select_max("col1","table_name"," 1 ");
