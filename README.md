@@ -29,3 +29,27 @@ returns 1 if query successfully executed else display error<br>
 example:<br>
 $response=$object_name->delete("table_name"," col1 > '10' ");<br>
 $response=$object_name->delete("table_name","1"); to delete  all rows
+
+<h5> 4 . select rows</h5>
+<p>Usage: </p>
+$object_name->select_rows($column,$table,$condition);<br>
+returns resultset if query successfully executed else display error<br>
+example:<br>
+$response=$object_name->select_rows("col1","table_name"," col1 > '10' ");<br>
+$response=$object_name->select_rows("*","table_name","  col1 > '10' "); to fetch  all columns
+
+<h5> 5 . select count of rows</h5>
+<p>Usage: </p>
+$object_name->select_count($column,$table,$condition);<br>
+returns resultset if query successfully executed else display error<br>
+example:<br>
+$response=$object_name->select_count("*","table_name"," col1 > '10' ");<br>
+$response=$object_name->select_rows("*","table_name"," 1 "); to count  all rows
+
+<h5> 6 . select sum of rows</h5>
+<p>Usage: </p>
+$object_name->select_sum($column,$table,$condition);<br>
+returns resultset if query successfully executed else display error<br>
+example:<br>
+$response=$object_name->select_sum("col1","table_name"," col1 > '10' ");<br>
+$response=$object_name->select_rows("col1","table_name"," 1 "); to sum  all rows
