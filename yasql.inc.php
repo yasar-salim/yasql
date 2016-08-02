@@ -5,10 +5,10 @@
 //Current Version   :      0.9
 
 
-define('SERVER',"localhost");
-define('USERNAME',"root");
-define('PASSWORD',"");
-define('DATABASE',"bkat");
+define('SERVER',"server_name");
+define('USERNAME',"username");
+define('PASSWORD',"password");
+define('DATABASE',"database_name");
 
 
 
