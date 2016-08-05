@@ -1,8 +1,8 @@
 <?php
 //Author            :      Yasar Salim
 //Company           :      Bytekat Technologies Private Limited
-//Previous Versions :      nil
-//Current Version   :      0.9
+//Previous Versions :      0.9
+//Current Version   :      1.0
 
 
 define('SERVER',"server_name");
