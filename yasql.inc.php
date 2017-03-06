@@ -15,7 +15,7 @@ define('DATABASE',"database_name");
 class yasql
 {
   public function select_count($column,$table,$condition){
-    $sql="select  max($column) from $table where $condition";
+    $sql="select  count($column) from $table where $condition";
     $query=new response();
     return $query->select_math_queries($sql);
   }
