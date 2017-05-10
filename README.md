@@ -1,78 +1,102 @@
-<h1>yasql</h1>
-<p>yasql is mysql library using php language</p>
-<h2>How to use yasql?</h2>
-<h3>Step 1 : Create yasql object</h3>
-<p> $object_name=new yasql();</p>
-<br/>
-<h3>Step 2 : Call function using object name</h3>
-<h4>List of functions:</h4>
+yasql
 
-<h5> 1 . insert query</h5>
-<p>Usage: </p>
-$object_name->insert($table,$values);<br>
-returns 1 if query successfully executed else display error<br>
-example:<br>
+yasql is mysql library using php language
+
+How to use yasql?
+
+Step 1 : Create yasql object
+
+$object_name=new yasql();
+
+
+
+Step 2 : Call function using object name
+
+List of functions:
+
+1 . insert query
+
+Usage:
+
+$object_name->insert($table,$values);
+returns 1 if query successfully executed else display error
+example:
 $response=$object_name->insert("table_name"," col1 = 'abc' , col2 = '10'");
 
-<h5>2. update query</h5>
-<p>Usage:</p>
-$object_name->update($table,$updation,$condition);<br>
-returns 1 if query successfully executed else display error<br>
-example:<br>
-$response=$object_name->update("table_name" , " col1 = 'abcd' " , "col2>10");<br>
-$response=$object_name->update("table_name" , " col1 = 'abcde' " , "1");        to update all rows
+2. update query
 
-<h5> 3 . delete query</h5>
-<p>Usage: </p>
-$object_name->delete($table,$condition);<br>
-returns 1 if query successfully executed else display error<br>
-example:<br>
-$response=$object_name->delete("table_name"," col1 > '10' ");<br>
-$response=$object_name->delete("table_name","1"); to delete  all rows
+Usage:
 
-<h5> 4 . select rows</h5>
-<p>Usage: </p>
-$object_name->select_rows($column,$table,$condition);<br>
-returns resultset if query successfully executed else display error<br>
-example:<br>
-$response=$object_name->select_rows("col1","table_name"," col1 > '10' ");<br>
-$response=$object_name->select_rows("*","table_name","  col1 > '10' "); to fetch  all columns
+$object_name->update($table,$updation,$condition);
+returns 1 if query successfully executed else display error
+example:
+$response=$object_name->update("table_name" , " col1 = 'abcd' " , "col2>10");
+$response=$object_name->update("table_name" , " col1 = 'abcde' " , "1"); to update all rows
 
-<h5> 5 . select count of rows</h5>
-<p>Usage: </p>
-$object_name->select_count($column,$table,$condition);<br>
-returns resultset if query successfully executed else display error<br>
-example:<br>
-$response=$object_name->select_count("*","table_name"," col1 > '10' ");<br>
-$response=$object_name->select_rows("*","table_name"," 1 "); to count  all rows
+3 . delete query
 
-<h5> 6 . select sum of rows</h5>
-<p>Usage: </p>
-$object_name->select_sum($column,$table,$condition);<br>
-returns resultset if query successfully executed else display error<br>
-example:<br>
-$response=$object_name->select_sum("col1","table_name"," col1 > '10' ");<br>
-$response=$object_name->select_rows("col1","table_name"," 1 "); to sum  all rows
+Usage:
 
+$object_name->delete($table,$condition);
+returns 1 if query successfully executed else display error
+example:
+$response=$object_name->delete("table_name"," col1 > '10' ");
+$response=$object_name->delete("table_name","1"); to delete all rows
 
-<h5> 7 . select average of rows</h5>
-<p>Usage: </p>
-$object_name->select_avg($column,$table,$condition);<br>
-returns resultset if query successfully executed else display error<br>
-example:<br>
-$response=$object_name->select_sum("col1","table_name"," col1 > '10' ");<br>
-$response=$object_name->select_rows("col1","table_name"," 1 "); to average  all rows
+4 . select rows
 
-<h5> 8 . select minimum value from a row</h5>
-<p>Usage: </p>
-$object_name->select_min($column,$table,$condition);<br>
-returns resultset if query successfully executed else display error<br>
-example:<br>
+Usage:
+
+$object_name->select_rows($column,$table,$condition);
+returns resultset if query successfully executed else display error
+example:
+$response=$object_name->select_rows("col1","table_name"," col1 > '10' ");
+$response=$object_name->select_rows("*","table_name"," col1 > '10' "); to fetch all columns
+
+5 . select count of rows
+
+Usage:
+
+$object_name->select_count($column,$table,$condition);
+returns resultset if query successfully executed else display error
+example:
+$response=$object_name->select_count("","table_name"," col1 > '10' ");
+$response=$object_name->select_rows("","table_name"," 1 "); to count all rows
+
+6 . select sum of rows
+
+Usage:
+
+$object_name->select_sum($column,$table,$condition);
+returns resultset if query successfully executed else display error
+example:
+$response=$object_name->select_sum("col1","table_name"," col1 > '10' ");
+$response=$object_name->select_rows("col1","table_name"," 1 "); to sum all rows
+
+7 . select average of rows
+
+Usage:
+
+$object_name->select_avg($column,$table,$condition);
+returns resultset if query successfully executed else display error
+example:
+$response=$object_name->select_sum("col1","table_name"," col1 > '10' ");
+$response=$object_name->select_rows("col1","table_name"," 1 "); to average all rows
+
+8 . select minimum value from a row
+
+Usage:
+
+$object_name->select_min($column,$table,$condition);
+returns resultset if query successfully executed else display error
+example:
 $response=$object_name->select_min("col1","table_name"," 1 ");
 
-<h5> 9 . select maximum value from a row</h5>
-<p>Usage: </p>
-$object_name->select_max($column,$table,$condition);<br>
-returns resultset if query successfully executed else display error<br>
-example:<br>
+9 . select maximum value from a row
+
+Usage:
+
+$object_name->select_max($column,$table,$condition);
+returns resultset if query successfully executed else display error
+example:
 $response=$object_name->select_max("col1","table_name"," 1 ");
